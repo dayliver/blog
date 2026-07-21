@@ -78,8 +78,13 @@
   tbody tr:nth-child(even) { background: var(--table-stripe); }
   img { max-width: 100%; border-radius: 0; }
   hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-  .publish-back { display: inline-block; margin: 0 0 1.5rem; font-size: 0.875rem; color: var(--muted-foreground); text-decoration: none; }
-  .publish-back:hover { color: var(--primary); text-decoration: underline; }
+  .publish-back-wrap { max-width: 780px; margin: 2.5rem auto 0; }
+  .publish-back {
+    display: inline-flex; align-items: center; gap: 0.4em;
+    padding: 0.45em 1em; border: 1px solid var(--border); border-radius: 9999px;
+    font-size: 0.875rem; color: var(--foreground); text-decoration: none;
+  }
+  .publish-back:hover { border-color: var(--primary); color: var(--primary); }
   .publish-meta { color: var(--muted-foreground); font-size: 0.875rem; margin: 0 0 2rem; }
   .publish-comments { max-width: 780px; margin: 2.5rem auto 0; }
   .publish-footer { max-width: 780px; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--muted-foreground); text-align: center; }
